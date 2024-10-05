@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProjectAssignmentHomework.Program">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.Balloon">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAAAAgAAgAAAAAAAAAAEAAAAAAAAAgAAEAAA=</HashCode>
+      <FileName>Ballon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.ComboSystem">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAgAAAAAAAAAAAAAAAAIABAAAAAAAAAA=</HashCode>
+      <FileName>ComboSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.Dart">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Dart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.DartType">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAIAAABAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DartType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.Game">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAgAAAAAAAAIAACCCAQAAIAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.GameMode">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.Player">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAAAAABAgAAAAAAABAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectAssignmentHomework.Swarm">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAgAAEAAA=</HashCode>
+      <FileName>Swarm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
