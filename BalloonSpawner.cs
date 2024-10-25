@@ -1,34 +1,41 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BalloonSpawner : MonoBehaviour
 {
-    public GameObject balloonPrefab;  // Reference to the balloon prefab
-    public int rows = 4;
-    public int columns = 6;
-    public float spacing = 1.5f;
-    public Vector2 spawnStartPos = new Vector2(-5f, 4f);
-    public float minSpawnDelay = 0.5f;  // Minimum delay between spawns
-    public float maxSpawnDelay = 1.5f;  // Maximum delay between spawns
+    public GameObject balloonpink;   // Assign in the Inspector
+    public GameObject balloonwhite;  // Assign in the Inspector
+    public GameObject balloonpurple; // Assign in the Inspector
+
+    public int balloonCount = 50; // Number of balloons to spawn per color
+    public float spawnRangeX = 8f; // Horizontal range for spawning balloons
+    public float minSpawnY = -4f;  // Minimum Y position for spawning
+    public float maxSpawnY = -6f;  // Maximum Y position for spawning
+
+    public float minSpawnDelay = 0.1f;  // Minimum delay between spawns
+    public float maxSpawnDelay = 0.5f;  // Maximum delay between spawns
 
     void Start()
     {
-        StartCoroutine(SpawnBalloonsWithDelay());
+        // Start spawning balloons
+        StartCoroutine(SpawnBalloonWave(balloonpink, balloonCount));
+        StartCoroutine(SpawnBalloonWave(balloonwhite, balloonCount));
+        StartCoroutine(SpawnBalloonWave(balloonpurple, balloonCount));
     }
 
-    IEnumerator SpawnBalloonsWithDelay()
+    IEnumerator SpawnBalloonWave(GameObject balloonPrefab, int count)
     {
-        for (int row = 0; row < rows; row++)
+        for (int i = 0; i < count; i++)
         {
-            for (int col = 0; col < columns; col++)
-            {
-                Vector2 spawnPos = spawnStartPos + new Vector2(col * spacing, -row * spacing);
-                Instantiate(balloonPrefab, spawnPos, Quaternion.identity);
+            // Generate random position for each balloon
+            Vector2 spawnPos = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(minSpawnY, maxSpawnY));
 
-                // Wait for a random delay before spawning the next balloon
-                float delay = Random.Range(minSpawnDelay, maxSpawnDelay);
-                yield return new WaitForSeconds(delay);
-            }
+            // Instantiate balloon at the random position
+            Instantiate(balloonPrefab, spawnPos, Quaternion.identity);
+
+            // Wait for a random delay before spawning the next balloon
+            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
         }
     }
 }
